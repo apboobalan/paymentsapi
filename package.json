@@ -1,0 +1,21 @@
+{
+  "name": "payment",
+  "version": "1.0.0",
+  "description": "Payment api",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "./node_modules/.bin/mocha"
+  },
+  "author": "Boo",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "icedfrisby": "^1.5.0",
+    "joi": "^13.6.0",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.2.9",
+    "restify": "^7.2.1",
+    "restify-plugins": "^1.6.0"
+  }
+}
