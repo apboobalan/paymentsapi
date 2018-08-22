@@ -38,10 +38,10 @@ frisby.create('Get 409 Error when id already exists')
     .toss()
 
 frisby.create('Create Payment with credit card')
-    .post(URL + 'payment', {"id":2,"name":"booCredit","type":"cc","expiry":"11/12/12","cc":"c","ccv":"cc"})
+    .post(URL + 'payment', {"id":2,"name":"booCredit","type":"cc","expiry":"2012-12-12T00:00:00.000Z","cc":"c","ccv":"cc"})
     .expectStatus(200)
     .expectJSONTypes({"id": Joi.string(),"name": Joi.string(),"type": Joi.string(),"expiry": Joi.string(),"cc": Joi.string(),"ccv": Joi.string()})
-    .expectJSON({"id": "2","name": "booCredit","type": "cc","expiry": "2012-11-11T18:30:00.000Z","cc": "c","ccv": "cc"
+    .expectJSON({"id": "2","name": "booCredit","type": "cc","expiry": "2012-12-12T00:00:00.000Z","cc": "c","ccv": "cc"
     })
     .toss()
 

@@ -1,0 +1,1 @@
+docker exec -it paymentsapi_web_1 /bin/bash
